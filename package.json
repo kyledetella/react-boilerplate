@@ -1,0 +1,20 @@
+{
+  "name": "react-code-discussion",
+  "version": "1.0.0",
+  "description": "A dive into ReactJS",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kyle DeTella <kdetella@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^6.3.2",
+    "gulp": "^3.8.10",
+    "gulp-webserver": "^0.8.7",
+    "react": "^0.12.1",
+    "reactify": "^0.17.0",
+    "vinyl-source-stream": "^1.0.0"
+  }
+}
