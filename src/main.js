@@ -10,4 +10,4 @@ var Hello = React.createClass({
   }
 });
 
-React.renderComponent(<Hello />, document.body);
+React.render(<Hello />, document.body);
