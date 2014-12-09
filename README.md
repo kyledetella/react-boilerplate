@@ -1,5 +1,5 @@
-Let's Learn Some React!
-======================
+Reduce. Reuse. React.
+=====================
 
 ## Install
 
