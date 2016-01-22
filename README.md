@@ -1,14 +1,17 @@
-Reduce. Reuse. React.
-=====================
+React Boilerplate
+=================
 
-## Install
+Everything you need to get up and running with React quickly!
 
-```
-nvm use && npm i
+```bash
+$ npm i && npm start
 ```
 
-## Run
+This will run the app on port `3045`.
 
-```
-npm start
-```
+http://localhost:3045
+
+## Todo
+
+- [ ] Add testing & linting
+- [ ] Add Router
