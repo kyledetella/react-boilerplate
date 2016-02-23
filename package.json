@@ -5,18 +5,32 @@
   "main": "index.js",
   "scripts": {
     "start": "mkdir -p dist/ && serve -p 3045 & watchify -t [ babelify --presets [ react es2015 ] ] src/js/main.js -o dist/bundle.js -v",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test --compilers js:babel-register --recursive"
   },
   "author": "Kyle DeTella <kdetella@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-react": "^6.3.13",
+    "babel-preset-stage-0": "^6.5.0",
     "babelify": "^7.2.0",
     "braintree-web": "^2.18.0",
+    "chai": "^3.5.0",
+    "jsdom": "^8.0.4",
+    "mocha": "^2.4.5",
     "react": "^0.14.6",
+    "react-addons-test-utils": "^0.14.7",
     "react-dom": "^0.14.6",
     "serve": "^1.4.0",
+    "sinon": "^1.17.3",
+    "sinon-chai": "^2.8.0",
     "watchify": "^3.7.0"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "react",
+      "stage-0"
+    ]
   }
 }
