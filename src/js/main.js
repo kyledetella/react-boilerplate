@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import {render} from 'react-dom';
 import Picker from './modules/Picker';
 
 class App extends React.Component {
@@ -15,7 +15,7 @@ class App extends React.Component {
   }
 }
 
-ReactDOM.render(
+render(
   <App />,
   document.body.appendChild(document.createElement('div'))
 );
