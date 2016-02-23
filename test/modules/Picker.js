@@ -20,8 +20,8 @@ describe('Picker', () => {
       <Picker />
     )
 
-    const selectNode = TestUtils.scryRenderedDOMComponentsWithTag(picker, 'select');
+    const selectNode = TestUtils.scryRenderedDOMComponentsWithTag(picker, 'select')
 
-    expect(selectNode.length).to.equal(0);
+    expect(selectNode.length).to.equal(0)
   })
 })
