@@ -1,15 +1,30 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import {render} from 'react-dom';
+import {
+  Router,
+  Route,
+  hashHistory,
+  IndexRoute
+} from 'react-router';
 
-class App extends React.Component {
-  render() {
-    return (
-      <div>This looks pretty boring...style it with JS!</div>
-    );
-  }
-}
+import About from './modules/About';
+import Repos from './modules/Repos';
+import Repo from './modules/Repo';
+import App from './modules/App';
+import Home from './modules/Home';
 
-ReactDOM.render(
-  <App />,
+render(
+  <Router history={hashHistory}>
+    <Route path="/" component={App}>
+
+      <IndexRoute component={Home} />
+
+      <Route path="/repos" component={Repos}>
+        <Route path="/repos/:userName/:repoName" component={Repo} />
+      </Route>
+
+      <Route path="/about" component={About} />
+    </Route>
+  </Router>,
   document.body.appendChild(document.createElement('div'))
 );

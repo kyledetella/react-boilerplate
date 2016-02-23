@@ -18,5 +18,8 @@
     "react-dom": "^0.14.6",
     "serve": "^1.4.0",
     "watchify": "^3.7.0"
+  },
+  "dependencies": {
+    "react-router": "^2.0.0"
   }
 }
