@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import {render} from 'react-dom';
 
 class App extends React.Component {
   render() {
@@ -9,7 +9,7 @@ class App extends React.Component {
   }
 }
 
-ReactDOM.render(
+render(
   <App />,
   document.body.appendChild(document.createElement('div'))
 );
