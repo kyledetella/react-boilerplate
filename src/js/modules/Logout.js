@@ -1,11 +1,14 @@
 import React from 'react'
+import Auth from './Auth';
 
 class Logout extends React.Component {
+  componentDidMount() {
+    Auth.logout();
+  }
+
   render() {
     return (
-      <div>
-        <h2>Logout</h2>
-      </div>
+      <p>Bye</p>
     )
   }
 }
