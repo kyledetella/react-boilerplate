@@ -11,7 +11,18 @@ This will run the app on port `3045`.
 
 http://localhost:3045
 
-## Todo
+## Test
 
-- [ ] Add testing & linting
-- [ ] Add Router
+```bash
+$ npm t
+```
+
+Watch tests
+
+```bash
+$ npm run test:watch
+```
+
+## Tutorial
+
+@via: http://teropa.info/blog/2015/09/10/full-stack-redux-tutorial.html
